@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*  - Applies from left. If not available fallback to right and so on. 
+        - If none of font is found, default is applied
+        - Include value in quotation if there is space */
+    background-color: antiquewhite;     /* Value has same option as in color */
+}
+
+h1{
+    text-align: center;         /* left, right, center, justify */
+    font-size: 35px;
+}
+
+article {
+    text-align:justify;
+    margin: 5px 40px; 
+    /* Top-down Left-Right */  
+    padding: 5px;
+    font-size: 20px;
+    line-height: 40px;          /* Measurement similar to font-size is applicable */
+    color: grey;
+}
+
+h2{
+    color: #000000;
+}
+
+blockquote{
+    font-style: italic;         /* italic, oblique */
+    font-weight: bold;          /* bold, bolder, lighter */
+    text-align: right;
+    text-decoration:underline;  /* line-through, overline, underline */
+    font-size: 16px;
+}
+
+
+/*
+font-size:      - xx-small, x-small, small, medium, large, x-large, xx-large
+                - 20px      [default 16px]
+                - 150%
+                - 1.5em     [equivalent of 150%]
+                - 1.5rem    [1.5 times size of root]
+
+
+color:          - Name of basic color. (red, blue, aqua, grey)
+                - #ff0000 (hex code. RGB value)
+                - rgb(256, 10, 10)
+                - rgba(256, 0, 0, 0.5)  # RGB value with alpha (transparency) parameter. 0 <= a <= 1
+                - hsl(120, 60%, 60%)    # Hue, Saturation, Brightness
+                
+
+*/
