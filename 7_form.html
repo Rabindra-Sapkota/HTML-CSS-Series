@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Comment is within this. Can be single/Multi Line -->
+<!-- Below is an example of basic template -->
+<html lang="en">
+    <head>
+        <!-- Characterset for non-english content -->
+        <meta charset="utf-8"/>
+        
+        <!-- Meta Tag for google description, author, keyword and responsiveness -->
+        <meta name="description" content="Template HTML">
+        <meta name="Keywords" content="e-learning, website">
+        <meta name="author" content="Rabindra">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Google Fonts. Code snippet from google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <link rel="icon" href="images/icon_image.ico">    <!-- Title Logo -->
+        <title>Tech-Tutorial</title>                      <!-- Title Name -->
+
+        <!-- CSS link -->
+        <link rel="stylesheet" href="css/style-sheet.css" type="text/css">
+
+    </head>
+    
+    <body>
+        <!-- 
+            Tag             Description
+            form            Make form
+            input           Data input to form.
+            Fieldset        Group Common info
+            legend          To add label to fieldset
+
+          Attributes of Input:
+            type            Type of input i.e text, password, email, range, number, date, time, radio, color, checkbox, file, reset, submit
+            name            Name for element
+            value           Value to indicate which element is choosen
+            autofocus       Focus to this attribute in form
+            size            Size of box
+            placeholder     Value displayed on form when not typed
+            min             Minimum allowed value
+            max             Maximum allowed value
+            required        Indicate form has to be filled
+            max-length      Maximum allowed length for field
+         -->
+        <h1>Registration Form</h1>
+        <form action="form-submit-dummy" method="post">
+            <fieldset>
+                <legend>Basic Info</legend>
+                Name: <input type="text" name="name" required size="25" maxlength="25" placeholder="Full Name"><br>
+                Expertise: Low <input type="range" min="1" max="100"> High <br>
+                Email: <input type="email" name="email" required size="30"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Info</legend>
+                Country: <input list="countries" name="countries">
+                    <datalist id="countries">
+                        <option value="Afghanistan"></option>
+                        <option value="Albania"></option>
+                        <option value="Algeria"></option>
+                        <option value="Andorra"></option>
+                        <option value="Angola"></option>
+                        <option value="Antigua & Deps"></option>
+                        <option value="Argentina"></option>
+                        <option value="Armenia"></option>
+                        <option value="Australia"></option>
+                        <option value="Austria"></option>
+                        <option value="Azerbaijan"></option>
+                        <option value="Bahamas"></option>
+                        <option value="Bahrain"></option>
+                        <option value="Bangladesh"></option>
+                        <option value="India"></option>
+                        <option value="Nepal"></option>
+                        <option value="US"></option>
+                    </datalist><br>
+                StreetNumber: <input type="number" min="1" max="32"><br>
+                DOB: <input type="date" name="dob" required max="2023-01-01"><br>
+                Password: <input type="password"><br>
+                Gender: <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="male">Female<br>
+                Pick Color: <input type="color"><br>
+                Time: <input type="time"><br>
+                Security Question: <select>
+                    <option value="pet">Name of Your First Pet</option>
+                    <option value="techer">Name of Your First Teacher</option>
+                    <option value="school">Name of Your First School</option>
+                    <option value="nickname">Name of Your NickName</option>
+                </select><br>
+                <textarea rows="1" cols="30"></textarea><br>
+            </fieldset>
+            <input type="checkbox" name="agree" required>I agree to terms and condition<br>
+            <input type="file" value="image"><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Register">
+        </form>
+    </body>
+
+</html>
