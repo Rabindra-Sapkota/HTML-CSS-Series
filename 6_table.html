@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- Comment is within this. Can be single/Multi Line -->
+<!-- Below is an example of basic template -->
+<html lang="en">
+    <head>
+        <!-- Characterset for non-english content -->
+        <meta charset="utf-8"/>
+        
+        <!-- Meta Tag for google description, author, keyword and responsiveness -->
+        <meta name="description" content="Template HTML">
+        <meta name="Keywords" content="e-learning, website">
+        <meta name="author" content="Rabindra">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Google Fonts. Code snippet from google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <link rel="icon" href="images/icon_image.ico">    <!-- Title Logo -->
+        <title>Tech-Tutorial</title>                      <!-- Title Name -->
+
+        <!-- CSS link -->
+        <link rel="stylesheet" href="css/style-sheet.css" type="text/css">
+
+        <style>
+            #routine {
+                border-collapse: collapse;
+                width: 500px;
+                margin: 10px auto;
+            }
+            td, th{
+                border: 1px solid black;
+                text-align: center;
+                padding: 5px;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <!--
+            Tag         Description
+            table       Used to define table
+            tr          Used to table row
+            th          Used to define table header
+            td          Used to define table data
+            
+            nav         Navigation. Semantic-Tag to indicate navigation menu
+            details     Used in combination of summary to show content only when expanded
+            summary     Content to be shown witin details tag
+        -->
+        <h1>Table</h1>
+        <table id="routine">
+            <caption>My Daily Routine</caption>
+            <tr>
+                <th>Day</th>
+                <th>5 - 6 AM</th>
+                <th>6 - 7 AM</th>
+                <th>7 - 8 AM</th>
+                <th>After 8</th>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td rowspan="7">Office</td>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>BootStrap</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>JS</td>
+                <td>BootStrap</td>
+                <td>JQuery</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="3">Break</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>BootStrap</td>
+                <td>JQuery</td>
+                <td>React</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>JQuery</td>
+                <td>React</td>
+                <td>UI/UX</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td colspan="3">Break</td>
+            </tr>
+        </table>
+
+        <br>
+        <nav>
+            <table width="100%">
+                <tr>
+                    <td>Home</td>
+                    <td>Contact</td>
+                    <td>About</td>
+                </tr>
+            </table>
+        </nav>
+        <h1>Course Syllabus</h1>
+        <details>
+            <summary>HTML</summary>
+            <ul>
+                <li>Introdution</li>
+                <li>Text</li>
+                <li>Media</li>
+                <li>Link</li>
+                <li>Table</li>
+                <li>Form</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>CSS</summary>
+            <ul>
+                <li>Introdution</li>
+                <li>Selector</li>
+                <li>ID</li>
+                <li>Class</li>
+                <li>Tag</li>
+                <li>Formatting</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>JS</summary>
+            <ul>
+                <li>Introdution</li>
+                <li>Variable</li>
+                <li>DataType</li>
+                <li>Loop</li>
+                <li>Conditional</li>
+                <li>Function</li>
+            </ul>
+        </details>
+
+        <h1>Image Grid</h1>
+        <table>
+            <tr>
+                <td><img src="images/LogoBlack.png" width="125"></td>
+                <td><img src="images/sample_giff.gif" width="125"></td>
+            </tr>
+            <tr>
+                <td>Blank<br>- No data</td>
+                <td><img src="images/LogoBlue.png" width="125"></td>
+            </tr>
+        </table>
+    </body>
+
+</html>
