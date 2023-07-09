@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.box_1{
+    background-color: aqua;
+    width:1000px;
+    /* If only width is specified then height is automatically adjusted to fit content */
+    height: 250px;
+    /* when specifying height if content doesnot fit we have overflow attribute*/
+    overflow: scroll;       /* hidden, visible */
+    margin: 15px auto;
+    padding: 20px;
+    border: 5px solid red;
+}
+
+.box_2{
+    background-color: aquamarine;
+    max-width:1000px;
+    margin: 15px auto;
+    padding: 15px;
+    border: 5px solid red;
+}
+
+/*
+- Fill area is the area of box
+- Gap between red boarder and text is called padding
+- Gap between first box and second box is called margin
+
+Values Interpretation in margin and padding
+- Only single specified     -->     Applied for all side (top, bottom, right, left)
+- Two values specified      -->     First for top & bottom,  Second for left and right
+- Three values specified    -->     1st for top, 2nd for left and right, 3rd for bottom
+- Four values specified     -->     1st for top, 2nd for right, 3rd for bottom, 4th for left
+
+Value: Auto is specified for distribution of margin equally
+*/
