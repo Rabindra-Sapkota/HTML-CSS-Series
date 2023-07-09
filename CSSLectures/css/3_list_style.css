@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*  - Applies from left. If not available fallback to right and so on. 
+        - If none of font is found, default is applied
+        - Include value in quotation if there is space */
+    background-color: antiquewhite;     /* Value has same option as in color */
+}
+
+
+ol {
+    list-style-type:lower-roman;  /* decimal,  decimal-leading-zero*, lower-alpha, lower-greek, lower-roman, none, upper-alpha, upper-roman*/
+}
+
+ul{
+    list-style-image:url("../../images/bullet_image.jpg");
+    list-style-type:square;     /* circle, disc, none, square, "user_given_value", "\2605" i.e unicode for star*/
+    /* Bullet will be square if there is any error in rendering image */
+}
