@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+a {
+    text-decoration:none;
+    color:chocolate;
+    /* Applied to all a:link, a:hover and a:visited */
+}
+
+a:visited{
+    color:green;
+}
