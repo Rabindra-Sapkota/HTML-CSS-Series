@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    background-color: aqua;
+    width:30%;
+    margin: 15px 1%;
+    padding: 0.5%;
+    float: left;
+    /*
+        - Element pushed to left to occupy space.
+        - Can be pushed right as well
+        - None floated element occupies from top unless cleared
+    */
+}
+
+.clear{
+    background-color: aquamarine;
+    clear:both;
+    margin: 15px auto;
+    max-width: 1200px;
+    position: relative;
+    padding: 5px;
+    /* Relative from last parent position element. If nothing then from body */
+    /* Fixed position will make element static irrespective of browser movement */
+    bottom: 10px;
+    left: 5px;
+}
+
+h2{
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    text-align:justify;
+    font-size: 16px;
+    line-height: 35px;
+    color: #111111;
+}
