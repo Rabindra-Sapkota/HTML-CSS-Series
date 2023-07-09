@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Comment is within this. Can be single/Multi Line -->
+<!-- Below is an example of basic template -->
+<html lang="en">
+    <head>
+        <!-- Characterset for non-english content -->
+        <meta charset="utf-8"/>
+        
+        <!-- Meta Tag for google description, author, keyword and responsiveness -->
+        <meta name="description" content="Template HTML">
+        <meta name="Keywords" content="e-learning, website">
+        <meta name="author" content="Rabindra">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Google Fonts. Code snippet from google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <link rel="icon" href="images/icon_image.ico">    <!-- Title Logo -->
+        <title>Tech-Tutorial</title>                      <!-- Title Name -->
+
+        <!-- CSS link -->
+        <link rel="stylesheet" href="css/style-sheet.css" type="text/css">
+
+    </head>
+    
+    <body>
+        <!-- 
+            Tag         Description
+            figure      Grouping image
+            img         To add image. Self-closing
+            figcaption  Caption to image
+            audio       To add Audio
+            video       To add video
+            iframe      To add other webpage/video as embeded media.
+
+            Attributes
+            img
+                src         Path for image
+                width       Width for image or video
+                height      Height for image or video
+                alt         Description to image
+
+            video/audio
+                controls    Show control button for video/audio. Play, Pause, Sound
+                autoplay    Autoplay
+                loop        Play in loop
+        -->
+        <h1>Media</h1>
+        <h2>Image</h2>
+        <figure>
+            <img src="images/LogoBlack.png" width="125" height="125" alt="Tech-Tutorial Logo">
+            <figcaption>Tech-Tutorial Logo</figcaption>
+        </figure>
+        
+        <h2>Giff</h2>
+        <figure>
+            <img src="images/sample_giff.gif" width="125" height="125" alt="Web Scrolling">
+            <figcaption>Web Scrolling</figcaption>
+        </figure>
+
+        <h2>Audio</h2>
+        <audio width="125" controls autoplay loop muted>
+            <source src="images/sample_audio.mp3" type="audio/mp3">
+            <source src="images/sample_audio.ogg" type="audio/ogg">
+            <source src="images/sample_audio.wav" type="audio/wav">
+            <!-- Tries from top to play. If none of them are supported then it shows below message -->
+            Your Browser doesnot support audio
+        </audio>
+
+        <h2>Video</h2>
+        <video width="350" height="250" controls poster="images/LogoBlack.png">
+            <source src="images/short_video.mp4" type="video/mp4">
+            <source src="images/sample_video.ogg" type="video/ogg">
+            <source src="images/sample_video.webm" type="video/webm">
+            <!-- Tries from top to play. If none of them are supported then it shows below message -->
+            Your Browser doesnot support audio
+        </video>
+
+        <h2>Youtube Iframe</h2>
+        <!-- Goto Youtube, Select video, click on share option and choose embeded to get below code-->
+        <!-- Put ?rel=0 at the end so that youtube will suggest your videos only -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ns_9HWb7jpY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h2>Website Iframe</h2>
+        <iframe height="250" width="700" src="https://sapkotarabindra.com.np/"></iframe>
+    </body>
+
+</html>
